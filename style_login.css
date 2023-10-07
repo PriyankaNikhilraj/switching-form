@@ -1,0 +1,170 @@
+body {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_section {
+    background: rgb(255, 255, 255);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* border-radius: 100px; */
+    box-shadow: skyblue 0px 48px 100px 0px;
+
+}
+
+.switch {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    position: absolute;
+    left: 0px;
+    height: 500px;
+    width: 400px;
+    background: lightseagreen;
+    margin-left: 343px;
+    font-size: 30px;
+}
+
+.switch p {
+    font-size: 15px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.row h1 {
+    position: relative;
+    z-index: 1;
+}
+
+.row h1 ::before {
+    content: "";
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    width: 60%;
+    background-color: yellow;
+    z-index: -1;
+}
+
+.form-signup {
+    width: 400px;
+    height: 500px;
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 2px;
+    background-color: gray;
+    text-align: center;
+    margin-right: -31px;
+}
+
+.center p {
+    font-size: .9rem;
+    margin-top: 5px;
+
+}
+
+.sign {
+    background: lightseagreen;
+    color: white;
+    font-size: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.sign :hover {
+    background-color: blue;
+}
+
+.login_register {
+    margin-inline: 5px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.toRight {
+    animation: slideRight 0.5s ease-in-out forwards;
+}
+
+.toLeft {
+    animation: slideLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translatex(0px);
+        background-color: palevioletred;
+    }
+
+    100% {
+        transform: translatex(430px);
+        background-color: lightseagreen;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translatex(430px);
+        background-color: lightseagreen;
+    }
+
+    100% {
+        transform: translatex(0px);
+        background-color: palevioletred;
+    }
+}
+
+.form-login {
+    column-gap: 10px;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: gray;
+    text-align: center;
+    margin-left: -56px;
+
+
+}
+
+.login {
+    background-color: palevioletred;
+    color: white;
+    font-size: bold;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.form-login input,
+.form-signup input {
+    width: 225px;
+    height: 30px;
+    border-radius: 30px;
+}
